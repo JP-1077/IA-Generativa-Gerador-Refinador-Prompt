@@ -1,0 +1,41 @@
+﻿"# Test set name: Avaliar Gerador Prompts - Polaris AI"
+"# Test methods: GeneralQuality, CompareMeaning, Validação – Diagnóstico, Estrutura e Comportamento do Agente"
+"#"
+"question","expectedResponse"
+"Crie um prompt para gerar um relatório semanal de status de projetos.","Estrutura consistente
+Mesma lógica de qualidade
+Pequenas variações aceitáveis, mas mesmo padrão"
+"Precisamos melhorar a comunicação dessa demanda porque está confusa e o time não entende o que precisa ser feito.","Agente interpreta como texto desestruturado
+Reestrutura como prompt ou descrição clara
+Status: Atenção"
+"Gere um relatório detalhado, mas seja bem curto e completo ao mesmo tempo.
+
+","Identificação do conflito
+Status: Atenção ou Ruim
+Sugestão de ajuste
+Explicação clara do problema"
+"Ajuste esse prompt para ser usado como entrada de outro agente:
+“Organize essas informações.”","Estrutura clara
+Entradas bem definidas
+Formato previsível
+Sem jargão técnico"
+"Melhore esse prompt para uso interno com o Copilot:
+“Me ajuda a escrever um e-mail para o cliente.”","Prompt mais profissional
+Definição de tom, público e formato
+Status: Atenção"
+"Você é um analista de negócios. Analise o texto abaixo e gere um resumo em até 5 bullets destacando riscos, impactos e recomendações. Não invente informações.","Status: OK
+Poucas ou nenhuma mudança
+Pequenos refinamentos de linguagem"
+"Analisa isso aí e vê o que dá.","Lista clara de problemas
+Perguntas objetivas
+Nenhuma tentativa de “adivinhar” o objetivo"
+"Preciso de um prompt para melhorar textos.
+
+","Status: Ruim
+Identificação de ambiguidade
+Perguntas claras antes de finalizar
+Não “inventar” contexto"
+"Crie um prompt para resumir um documento técnico para executivos, destacando apenas riscos e decisões importantes.","Agente cria prompt do zero
+Prompt estruturado
+Formato de saída definido
+Sem perguntas extras"

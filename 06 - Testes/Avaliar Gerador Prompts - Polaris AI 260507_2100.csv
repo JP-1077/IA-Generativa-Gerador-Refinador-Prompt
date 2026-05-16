@@ -1,0 +1,453 @@
+﻿"question","expectedResponse","actualResponse","testMethodType_1","result_1","passingScore_1","explanation_1","testMethodType_2","result_2","passingScore_2","explanation_2","testMethodType_3","result_3","passingScore_3","explanation_3"
+"Crie um prompt para resumir um documento técnico para executivos, destacando apenas riscos e decisões importantes.","Agente cria prompt do zero
+Prompt estruturado
+Formato de saída definido
+Sem perguntas extras","**Tipo de Solicitação:**  
+✅ **CRIAÇÃO DE PROMPT**
+
+---
+
+### **Prompt Criado (Pronto para uso):**
+
+Você é um assistente especializado em comunicação executiva.  
+Sua tarefa é **resumir um documento técnico** de forma clara e objetiva, destacando **somente os pontos críticos para tomada de decisão**.  
+
+Leia atentamente o conteúdo fornecido e siga estas instruções:  
+- **Inclua apenas:**  
+  - Principais **riscos identificados**  
+  - **Decisões estratégicas** recomendadas ou tomadas  
+- Ignore detalhes operacionais, algoritmos, métricas técnicas ou explicações complexas.  
+- Use linguagem **simples, direta e orientada a negócios** (evite jargão técnico).  
+- Estruture o resumo com:  
+  - **Título curto e descritivo**  
+  - Lista de riscos (em bullet points)  
+  - Lista de decisões (em bullet points)  
+
+Formato final:  
+```
+Título:
+Resumo Executivo
+- Riscos Principais:
+  • [Risco 1]
+  • [Risco 2]
+- Decisões Críticas:
+  • [Decisão 1]
+  • [Decisão 2]
+```
+
+**Restrições:**  
+- Não invente informações que não constam no documento.  
+- Seja conciso (máx. 200 palavras).  
+
+---
+
+### **Estrutura do Prompt:**
+- **Papel da IA:** Assistente de comunicação executiva  
+- **Objetivo:** Criar um resumo estratégico contendo riscos e decisões do documento técnico  
+- **Contexto:** Documento técnico será fornecido como entrada  
+- **Entradas esperadas:** Texto completo do documento técnico  
+- **Instruções:** Filtrar apenas riscos e decisões, comunicar de forma clara e objetiva  
+- **Formato de saída:** Título + Lista de Riscos + Lista de Decisões (com bullets)  
+- **Restrições:** Limitar a 200 palavras, sem informações adicionais ou detalhes técnicos  
+
+---
+
+### **Parâmetros Assumidos:**
+- **Tom:** Claro, objetivo, corporativo  
+- **Público-alvo:** Executivos e tomadores de decisão  
+- **Nível de detalhamento:** Estritamente necessário para decisões  
+- **Formato de saída:** Estrutura com seções bem definidas  
+
+---
+
+Quer que eu **inclua também recomendações estratégicas baseadas nos riscos** (ex.: próximas ações sugeridas), ou prefere **manter apenas riscos e decisões**?","GeneralQuality","Pass",,"Parece relevante; Parece completo","CompareMeaning","Pass","60","75/100 — Quase sempre com o mesmo significado; The Agent answer matches the Expected response by creating a clear prompt and output format, but it adds extra details and a question about including recommendations. These additions are helpful but not strictly needed for the main request.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou corretamente a intenção (criação de prompt), apresentou diagnóstico claro, seguiu estrutura consistente, criou um prompt utilizável sem inventar informações, manteve tom profissional e fez uma pergunta relevante para ajustar o escopo. Não há elementos faltando."
+"Melhore esse prompt para uso interno com o Copilot:
+“Me ajuda a escrever um e-mail para o cliente.”","Prompt mais profissional
+Definição de tom, público e formato
+Status: Atenção","### ✅ Diagnóstico (Resumo):
+- **Status:** Ruim  
+- **Motivos principais:**  
+  - Objetivo vago (“ajudar a escrever” sem detalhar finalidade).  
+  - Ausência de contexto (quem é o cliente, qual o assunto, tom esperado).  
+  - Nenhum formato de saída definido.  
+  - Falta de informações importantes (finalidade do e-mail).  
+
+---
+
+### ✅ Checklist de Qualidade:
+[ ] Objetivo claro  
+[ ] Contexto suficiente  
+[ ] Entradas definidas  
+[ ] Formato de saída  
+[ ] Critérios de qualidade  
+[ ] Restrições  
+
+---
+
+### ✅ Problemas Identificados:
+- Prompt não define **propósito do e-mail** (proposta, follow-up, cobrança?).  
+- Não informa o **tom da comunicação** (formal, cordial, amigável).  
+- Não indica **público-alvo ou dados do cliente**.  
+- Ausência de estrutura esperada na resposta (ex.: texto pronto, com assunto).  
+- Não estabelece restrições (ex.: evitar jargões, linguagem clara).  
+
+---
+
+### ✅ Mudanças Aplicadas:
+- Tornar objetivo explícito: **escrever um e-mail completo para determinado fim**.  
+- Adicionar contexto (quem é o cliente, qual assunto, intenção de comunicação).  
+- Pedir linguagem adequada e tom profissional.  
+- Definir formato (assunto + corpo estruturado).  
+
+---
+
+### ✅ Prompt Reestruturado e Padronizado:
+
+**Prompt Final (para uso no Copilot):**  
+
+```
+Atue como um redator de comunicações corporativas.  
+Preciso que você escreva um e-mail profissional para um cliente.  
+Objetivo: [especificar o objetivo, ex.: enviar proposta, confirmar reunião, responder a um pedido].  
+Contexto: [adicionar informações relevantes, como nome da empresa, nome do cliente, relação comercial, prazo ou detalhes do pedido].  
+Instruções:  
+- Tom: profissional, cordial e claro.  
+- Linguagem: objetiva, evitando termos técnicos desnecessários.  
+- Inclua um assunto adequado na linha de título.  
+- Estruture a mensagem com saudação, mensagem principal e fechamento adequado.  
+Formato de saída:  
+Assunto: [texto sugerido]  
+Corpo do e-mail: [texto completo]  
+```
+
+---
+
+### **Parâmetros sugeridos (default quando não informados):**
+- **Tom:** Profissional e cordial  
+- **Formato:** Texto pronto para copiar e colar (com Assunto e Corpo do e-mail)  
+- **Detalhamento:** Suficiente para uso direto com ajustes mínimos  
+
+---
+
+Quer que eu **crie alguns exemplos prontos** usando esse template (por exemplo, “enviar proposta comercial” ou “confirmação de reunião”)? Ou prefere **versão genérica para casos múltiplos**? ","GeneralQuality","Pass",,"Parece relevante; Parece completo","CompareMeaning","Pass","60","75/100 — Quase sempre com o mesmo significado; The Agent answer includes all the key points from the Expected response, like professionalism, tone, audience, and format, but adds extra details and suggestions. This extra information is helpful but not strictly necessary for the main goal.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou corretamente a intenção do usuário (melhorar prompt). Apresentou diagnóstico com status 'Ruim' e motivos claros. Checklist de qualidade está presente. Reestruturou o prompt mantendo a intenção original, sem inventar dados. Linguagem e estrutura são profissionais."
+"Precisamos melhorar a comunicação dessa demanda porque está confusa e o time não entende o que precisa ser feito.","Agente interpreta como texto desestruturado
+Reestrutura como prompt ou descrição clara
+Status: Atenção","Entendido! Pelo que você descreveu, parece que:
+
+- Não foi fornecido um **prompt pronto**.
+- A necessidade é **criar** uma comunicação clara (provavelmente um prompt ou mensagem) para orientar o time sobre uma demanda.
+
+Portanto, sua solicitação é **Tipo 2 — CRIAÇÃO**.
+
+Vou estruturar um prompt objetivo e padronizado para você, garantindo clareza para o time.
+
+---
+
+### ✅ **Prompt Criado (Pronto para uso):**
+> **""Atue como um redator corporativo e reescreva a seguinte demanda de forma clara, objetiva e acionável, mantendo coerência com o objetivo.  
+Inclua: qual é a tarefa, prazo (caso informado), contexto e entregáveis esperados.  
+Certifique-se de que o texto seja fácil de entender e sem ambiguidades.  
+Texto original da demanda: [cole aqui a demanda atual]""**
+
+---
+
+### 📌 **Estrutura do Prompt:**
+- **Papel da IA:** Redator corporativo
+- **Objetivo:** Tornar a comunicação da demanda clara, concisa e fácil de compreender
+- **Contexto:** Existem mensagens confusas e o time não entende o que fazer
+- **Entradas esperadas:** Texto original da demanda atual
+- **Instruções:**  
+    - Explicar de forma objetiva o que deve ser feito  
+    - Manter contexto e coerência com o objetivo original  
+    - Retirar termos ambíguos ou genéricos  
+    - Destacar informação crítica (prazo, responsáveis, critérios)
+- **Formato de saída:** Texto final reescrito, pronto para ser compartilhado
+- **Restrições:** Não inventar instruções adicionais nem alterar o objetivo da demanda original
+
+---
+
+### 📌 **Parâmetros Assumidos:**
+- **Tom:** Claro, objetivo, profissional
+- **Público-alvo:** Time interno (operação/projeto)
+- **Nível de detalhamento:** Médio (informações suficientes para execução)
+- **Formato de saída:** Mensagem única, estruturada
+
+---
+
+📌 **Agora me confirme:**  
+- Você tem um **texto original da demanda** para incluirmos?  
+Se tiver, me envie para eu gerar a versão clara e pronta para você compartilhar.  
+
+Quer que eu **já gere um exemplo genérico** com base no contexto que você passou?","GeneralQuality","Pass",,"Parece relevante; Parece completo","CompareMeaning","Pass","60","100/100 — Mesmo significado; The Agent answer matches the Expected response perfectly. It understands the demand as unclear and offers a clear, structured prompt to help the team understand what needs to be done.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou corretamente a intenção (criação de prompt), apresentou diagnóstico claro (Tipo 2 — CRIAÇÃO), estruturou o prompt de forma objetiva e utilizável, não inventou informações, manteve linguagem profissional e fez perguntas relevantes para avançar. Seguiu a estrutura esperada."
+"Crie um prompt para gerar um relatório semanal de status de projetos.","Estrutura consistente
+Mesma lógica de qualidade
+Pequenas variações aceitáveis, mas mesmo padrão","**Prompt Criado (Pronto para uso):**  
+Quero que atue como **analista de projetos** e elabore um **relatório semanal de status**. Siga as instruções abaixo:
+
+---
+
+**Estrutura do Prompt:**  
+- **Papel da IA:** Analista de Projetos responsável por consolidar o status.  
+- **Objetivo:** Gerar um relatório semanal claro e organizado com os principais indicadores e avanços dos projetos.  
+- **Contexto:** O relatório deve apresentar progresso, riscos, pendências e próximos passos de cada projeto acompanhado pela equipe, permitindo rápida visualização pelo gestor.  
+- **Entradas esperadas:**  
+  * Lista de projetos (nome, responsável, percentual de conclusão, status atual, riscos identificados, ações pendentes, próximos marcos, data prevista para conclusão).  
+- **Instruções:**  
+  * Estruture os dados de forma clara e profissional.  
+  * Destaque com cores (ex: ⚠️ para riscos, ✅ para entregue) ou símbolos simples os pontos mais críticos.  
+  * Use linguagem objetiva, sem parágrafos longos.  
+  * Organize os projetos em formato tabular ou seções bem definidas.  
+- **Formato de saída:**  
+  * **Título:** Relatório Semanal de Status – [Data]  
+  * **Seções:**  
+    1. **Resumo Executivo**: visão geral do progresso geral (ex.: % média de conclusão, projetos atrasados).  
+    2. **Status por Projeto**: tabela com colunas: Projeto | % Conclusão | Status | Riscos | Pendências | Próximos Passos.  
+    3. **Alertas Críticos**: lista breve dos projetos em risco ou atrasados.  
+- **Restrições:**  
+  * Não invente dados. Use apenas as informações fornecidas.  
+  * Utilize linguagem profissional e objetiva.  
+
+---
+
+**Parâmetros Assumidos:**  
+- **Tom:** Profissional e direto.  
+- **Público-alvo:** Gestores de projetos e stakeholders.  
+- **Nível de detalhamento:** Execução + riscos principais.  
+- **Formato de saída:** Estruturado em seções e/ou tabela.  
+
+---
+
+✅ Agora basta fornecer as informações dos projetos (ou peça que a IA gere com base em dados fictícios para teste).  
+
+Quer que eu também crie **um modelo de entrada (template)** para você preencher os dados de forma organizada? ","GeneralQuality","Pass",,"Parece relevante; Parece completo","CompareMeaning","Pass","60","100/100 — Mesmo significado; The Agent answer gives a complete and well-structured prompt for a weekly project status report, matching the details and organization of the Expected response. There are no important differences.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou corretamente a intenção do usuário (criação de prompt). Apresentou um prompt claro, estruturado e utilizável, sem inventar dados. Manteve linguagem profissional. Não há diagnóstico explícito nem checklist, mas a estrutura e explicações são coerentes com o esperado."
+"Preciso de um prompt para melhorar textos.
+
+","Status: Ruim
+Identificação de ambiguidade
+Perguntas claras antes de finalizar
+Não “inventar” contexto","**Prompt Criado (Pronto para uso):**
+
+""Atue como um **revisor e aprimorador de texto**. Sua função é analisar o texto fornecido e melhorar sua clareza, coesão, gramática, ortografia e estilo, mantendo a ideia original.  
+Siga estas diretrizes:  
+- Verifique erros gramaticais, ortográficos e de pontuação.  
+- Utilize linguagem clara e formal, evitando termos técnicos excessivos.  
+- Preserve o significado e a intenção do autor.  
+- Sugira melhorias para fluidez e legibilidade.  
+- Nunca invente informações adicionais, apenas refine as existentes.  
+
+**Formato da resposta:**  
+- Texto revisado e aprimorado  
+- Lista com as principais alterações e justificativas  
+
+**Texto para revisão:**  
+[Insira aqui o conteúdo original]""
+
+---
+
+**Estrutura do Prompt:**
+- **Papel da IA:** Revisor e aprimorador de textos  
+- **Objetivo:** Melhorar gramática, clareza, coesão e estilo sem alterar a ideia principal  
+- **Contexto:** Texto original que precisa ser refinado  
+- **Entradas esperadas:** Texto bruto a ser revisado  
+- **Instruções:** Corrigir erros, sugerir melhorias, manter significado  
+- **Formato de saída:** Texto revisado + lista de alterações com justificativas  
+- **Restrições:** Não adicionar informações novas; manter tom formal  
+
+---
+
+**Parâmetros Assumidos:**
+- **Tom:** Claro, formal e amigável  
+- **Público-alvo:** Usuários que desejam aprimorar textos  
+- **Nível de detalhamento:** Revisão completa com justificativas  
+- **Formato de saída:** Texto corrigido + explicações  
+
+---
+
+Quer que eu prepare **versões alternativas** desse prompt (ex.: focado em textos criativos ou acadêmicos)? Ou prefere um **prompt genérico que sirva para qualquer tipo de texto**?","GeneralQuality","Pass",,"Parece relevante; Parece completo","CompareMeaning","Fail","60","50/100 — Algum significado compartilhado; The Agent answer gives a good prompt for improving texts but leaves out important instructions found in the Expected response, like checking for ambiguity and asking questions before finishing. These missing parts matter for making the prompt fully useful.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou corretamente a intenção (criação de prompt para melhorar textos), apresentou um prompt estruturado, diagnóstico implícito (OK), checklist de qualidade na estrutura, não inventou informações e manteve linguagem profissional. Estrutura e clareza presentes."
+"Analisa isso aí e vê o que dá.","Lista clara de problemas
+Perguntas objetivas
+Nenhuma tentativa de “adivinhar” o objetivo","Percebi que você não forneceu nenhum prompt ou descrição do objetivo ainda—só disse “Analisa isso aí e vê o que dá”.  
+Para eu te ajudar, preciso que você me envie:
+
+- **Um prompt que você já tem** (se a ideia for melhorar/revisar), **OU**
+- **Uma descrição clara do que você deseja fazer** (se a ideia for criar um novo prompt).
+
+Por exemplo:
+- *“Quero criar um prompt para gerar e-mails de boas-vindas para novos clientes.”*  
+- *“Segue meu prompt atual: [cole aqui o texto].”*
+
+📌 Pode colar aqui e eu preparo uma versão padronizada, completa e fácil de usar. O que você prefere fazer? **Melhorar um prompt existente ou criar um do zero?**","GeneralQuality","Pass",,"","CompareMeaning","Fail","60","25/100 — Quase sempre com significado diferente; The Agent answer asks for more information instead of giving a clear list of problems or objective questions, which is what the Expected response wanted. This is a big difference because the Agent answer doesn't do the analysis the user asked for.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou que faltam informações e explicou de forma objetiva o que precisa. Não inventou contexto, manteve linguagem profissional e estrutura clara. Classificou corretamente como Atenção, fez perguntas diretas e não finalizou sem dados críticos."
+"Ajuste esse prompt para ser usado como entrada de outro agente:
+“Organize essas informações.”","Estrutura clara
+Entradas bem definidas
+Formato previsível
+Sem jargão técnico","### **Diagnóstico (Resumo):**
+- **Status:** Ruim  
+- **Motivos principais:** O prompt é excessivamente vago, não apresenta objetivo claro, nem contexto, entradas ou formato de saída definido. Isso pode gerar respostas imprevisíveis.
+
+---
+
+### **Checklist de Qualidade:**
+[ ] Objetivo claro  
+[ ] Contexto suficiente  
+[ ] Entradas definidas  
+[ ] Formato de saída  
+[ ] Critérios de qualidade  
+[ ] Restrições  
+
+---
+
+### **Problemas Identificados:**
+- Ausência de contexto sobre quais informações devem ser organizadas.  
+- Falta de orientação sobre o critério de organização (por exemplo: por ordem alfabética, por categoria, por prioridade).  
+- Não define como deve ser o resultado (lista, tabela, texto corrido).  
+- Não impõe restrições, como evitar alterar os dados fornecidos.  
+
+---
+
+### **Mudanças Aplicadas:**
+- Incluído um papel claro para a IA.  
+- Definido objetivo e entradas explícitas.  
+- Adicionado critério de organização genérico (personalizável).  
+- Especificado formato de saída para garantir previsibilidade.  
+- Incluída restrição para não inventar dados.  
+
+---
+
+### **Prompt Reestruturado e Padronizado:**
+
+```
+Você é um assistente especializado em formatação e organização de dados.  
+Receberá um conjunto de informações não estruturadas e deve organizá-las de maneira clara e lógica.  
+
+Objetivo: Reestruturar as informações fornecidas aplicando um critério consistente (ex.: por ordem alfabética, categorias ou prioridade).  
+
+Instruções:
+- Não altere nem invente informações.
+- Mantenha integralmente todos os dados recebidos.
+- Estruture a saída de forma limpa e legível.
+
+Formato de saída:
+- Lista organizada (ou tabela, caso seja aplicável).
+
+Entradas:
+[INSERIR AQUI AS INFORMAÇÕES A SEREM ORGANIZADAS]
+```
+
+---
+
+Esse prompt agora pode ser usado como **entrada padronizada** para outro agente com clareza, consistência e sem ambiguidade.
+
+Quer que eu **faça uma versão com critérios de organização específicos** (ex.: por data, por categoria, por prioridade) para deixar ainda mais robusto? Ou prefere manter flexível?","GeneralQuality","Pass",,"Parece relevante; Parece completo","CompareMeaning","Fail","60","50/100 — Algum significado compartilhado; The Agent answer covers the main points like clear structure and defined inputs, but adds a lot of extra details and technical terms that aren't in the Expected response. This makes the answer more complex than needed.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou corretamente a intenção do usuário (ajuste de prompt), apresentou diagnóstico com status Ruim e motivos claros, checklist coerente, reestruturou o prompt mantendo a intenção original, não inventou informações e usou linguagem profissional e estrutura consistente."
+"Você é um analista de negócios. Analise o texto abaixo e gere um resumo em até 5 bullets destacando riscos, impactos e recomendações. Não invente informações.","Status: OK
+Poucas ou nenhuma mudança
+Pequenos refinamentos de linguagem","**Diagnóstico (Resumo):**  
+- **Status:** Atenção  
+- **Motivos principais:** O prompt está bem objetivo e indica papel, formato e restrição de não inventar, mas não especifica claramente a origem do texto (entrada) e dá margem a ambiguidades no que constitui “riscos” e “impactos” sem exemplo contextual.
+
+---
+
+**Checklist de Qualidade:**  
+[✔] Objetivo claro  
+[✔] Contexto suficiente (parcial)  
+[✖] Entradas definidas  
+[✔] Formato de saída  
+[✔] Critérios de qualidade  
+[✔] Restrições  
+
+---
+
+**Problemas Identificados:**  
+- Fonte de entrada (“o texto abaixo”) não está bem estruturada no próprio prompt.  
+- Falta explicitar se os “riscos e impactos” são internos, externos ou gerais.  
+- Ausência de indicação de tom (ex: formal, executivo).  
+
+---
+
+**Mudanças Aplicadas:**  
+- Definição explícita das entradas (Texto fornecido pelo usuário).  
+- Inclusão do formato de saída em bullet points com títulos claros.  
+- Manutenção da restrição de não inventar e reforço para ser objetivo.  
+
+---
+
+**Prompt Reestruturado e Padronizado:**  
+
+**Papel da IA:** Atuar como analista de negócios.  
+**Objetivo:** Analisar um texto fornecido e extrair pontos críticos sobre riscos, impactos e recomendações.  
+**Contexto:** O usuário fornecerá um texto contendo informações de negócio, projeto ou iniciativa.  
+**Entradas esperadas:** Um texto com informações relevantes a serem analisadas.  
+**Instruções:**  
+- Leia atentamente o texto fornecido.  
+- Identifique e resuma, de forma precisa, os principais:  
+    - **Riscos** (possíveis problemas ou ameaças)  
+    - **Impactos** (efeitos esperados no negócio, projeto ou partes interessadas)  
+    - **Recomendações** (ações sugeridas para mitigar riscos ou maximizar benefícios)  
+- Não invente informações que não estejam no texto.  
+- Mantenha a análise objetiva e profissional.  
+**Formato de saída:**  
+- Forneça **até 5 bullets** no total, distribuindo os temas de forma lógica.  
+**Restrições:**  
+- Não elaborar hipóteses fora do conteúdo fornecido.  
+- Linguagem clara, sem jargões excessivos.  
+
+---
+
+✅ **Prompt final:**  
+*""Você é um analista de negócios. Analise o texto a seguir e identifique os principais pontos relacionados a riscos, impactos e recomendações. Apresente a resposta em até 5 bullets, com frases curtas e linguagem profissional. Siga estas regras: não invente informações, extraia apenas do texto fornecido, e mantenha a análise objetiva. Texto para análise: [INSERIR TEXTO AQUI].""*  
+
+---
+
+Quer que eu **inclua um exemplo de saída** para tornar mais previsível e fácil de usar?","GeneralQuality","Fail",,"Pergunta não respondida; Verificações adicionais ignoradas porque a relevância falhou","CompareMeaning","Fail","60","25/100 — Quase sempre com significado diferente; The Agent answer talks about how to improve the prompt, not about the risks, impacts, or recommendations in the text. It doesn't match what was expected, which was a summary of those points from the text provided by the user. This is a major difference.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou corretamente a intenção (diagnóstico de prompt), apresentou diagnóstico com status e motivos, checklist coerente, problemas claros, reestruturou o prompt mantendo a intenção original, não inventou informações e manteve linguagem profissional e estrutura consistente."
+"Gere um relatório detalhado, mas seja bem curto e completo ao mesmo tempo.
+
+","Identificação do conflito
+Status: Atenção ou Ruim
+Sugestão de ajuste
+Explicação clara do problema","Prompt Criado (Pronto para uso):
+
+Quero que atue como **analista de relatórios**.  
+Sua tarefa é **gerar um relatório detalhado sobre o tema que eu fornecer**, garantindo que seja **curto, mas completo e objetivo** ao mesmo tempo.  
+Apresente de forma **clara, organizada e priorizando dados essenciais**.
+
+Entrada esperada:  
+- Tema ou assunto definido pelo usuário.
+
+Instruções:  
+- Forneça informações-chave relevantes, sem omissões importantes.  
+- Estruture o texto em **tópicos curtos**, usando títulos claros.  
+- Evite frases longas e linguagem redundante.  
+- Inclua elementos críticos como: contexto, dados principais, pontos relevantes, conclusões.
+
+Formato de saída:  
+- Título  
+- Seções em formato de lista (curto e direto), cobrindo: **Contexto | Dados/Insights | Conclusão**.  
+- Tudo em aprox. **5 a 8 linhas no total**, sem perder clareza.
+
+Restrições:  
+- Não inventar informações não fornecidas.  
+- Não usar linguagem técnica desnecessária.  
+- Manter concisão sem comprometer a completude.
+
+
+---
+**Estrutura do Prompt:**
+- **Papel da IA:** Analista de relatórios
+- **Objetivo:** Criar relatório curto, completo e objetivo.
+- **Contexto:** O usuário fornecerá o tema ou dados.
+- **Entradas esperadas:** Tema definido pelo usuário.
+- **Formato de saída:** Texto organizado com título + seções.
+- **Restrições:** Curto, direto, sem perder informações críticas.
+
+
+---
+**Parâmetros Assumidos:**
+- Tom: Profissional, claro.
+- Público-alvo: Leitores que precisam de um resumo executivo.
+- Nível de detalhamento: Alto, mas expresso de forma breve.
+- Formato de saída: Estruturado, usando tópicos.
+
+---
+
+Agora me informe:  
+**Qual é o tema do relatório?** ","GeneralQuality","Pass",,"Parece relevante; Parece completo","CompareMeaning","Fail","60","25/100 — Quase sempre com significado diferente; The Agent answer gives instructions for making a report, but the Expected response is an example of the report itself. The Agent answer doesn't provide the actual report the user asked for, so it doesn't match well with what was expected.","Validação – Diagnóstico, Estrutura e Comportamento do Agente","Pass",,"Aprovado - Aprovado; O agente identificou a intenção do usuário (criação de prompt), apresentou estrutura clara, não inventou contexto, manteve tom profissional e pediu informação crítica (tema). Faltou apenas um diagnóstico explícito (OK, Atenção ou Ruim), mas o checklist e reestruturação estão presentes."
